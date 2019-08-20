@@ -1,0 +1,33 @@
+
+#main_grid {
+    display: inline-grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#bg_count {
+    box-sizing: border-box;
+    background: #5b77a1;
+    padding: 5px;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+    #bg_count > div {
+        width: 100%;
+        margin-bottom: 10px;
+        overflow: hidden;
+        display: flex;
+    }
+
+        #bg_count > div label {
+            background: #f0f0f0;
+            width: 100px;
+            color: #222;
+            padding: 5px;
+        }
+
+#res {
+    background: #fff;
+    width: 100%;
+    padding: 5px;
+}
