@@ -13,20 +13,32 @@ function countNumber() {
     var end = Number(end_number.value);
     var interval = Number(int_number.value);
 
-    res.innerHTML = '';
-    var c = 0;
-    for (var i = start; i <= end; i++) {     
-       
+    if (end == 0) {
+        alert('Please digit a end number greater than zero');
 
-           if (c == interval || i == start) {
-               res.innerHTML += '<p>' + i + '</p>';
-               c = 0;
-           } else {
-               c++;         
-           }
-         
+    } else if (end <= start) {
+        alert('Please digit a end number greater than star number');
 
+    }else {
+
+        alert(start);
+        res.innerHTML = '';
+        var c = 0;
+        for (var i = start; i <= end; i++) {
+
+
+            if (c == interval || i == start) {
+                res.innerHTML += '<p>' + i + '</p>';
+                c = 0;
+            } else {
+                c++;
+            }
+
+
+        }
     }
+
+
 
 
 
