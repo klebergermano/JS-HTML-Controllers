@@ -1,5 +1,8 @@
+* { margin:0px; padding:0px; box-sizing:border-box;
+}
 
 #main_grid {
+    
     display: inline-grid;
     grid-template-columns: 1fr 1fr;
 }
@@ -10,18 +13,24 @@
     padding: 5px;
     padding: 20px;
     border-radius: 15px;
+    max-width:350px;
 }
 
     #bg_count > div {
-        width: 100%;
+        width:100%;
         margin-bottom: 10px;
         overflow: hidden;
         display: flex;
+        flex-wrap: wrap;
     }
 
+        #bg_count > div input {
+            width:60%;
+        }
         #bg_count > div label {
+            overflow:hidden;
             background: #f0f0f0;
-            width: 100px;
+            width: 40%;
             color: #222;
             padding: 5px;
         }
@@ -30,4 +39,19 @@
     background: #fff;
     width: 100%;
     padding: 5px;
+height: auto;
+    padding: 5px; /* this */
+    flex-direction: row;
+
 }
+
+
+
+    #res p {
+        flex-basis: 100%;
+        flex-shrink: 0;
+        border: 1px solid #ccc;
+        margin: 0px;
+        padding: 0 20px;
+       
+    }

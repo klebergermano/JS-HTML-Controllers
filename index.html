@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -11,19 +11,33 @@
     <main id='main_grid'>
         <div id='bg_count'>
 
-            <div><label>Start Number: </label>  <input type='number' name='start_number' id='start_number'></label></div>
-            <div><label>End Number: </label>  <input type='number' name='end_number' id='end_number'> </div>
-            <div><label>Interval: </label><input type='number' name='interval_number' id='interval_number'></div>
-            <div>
-                <div id='res'>Result: </div>
-
-            </div><!--counting-->
-
-            <div id='bg_multiplication'>
+            <div><label>Start Number: </label><input type='number' name='start_number' id='start_number' value="2"></div>
+            <div><label>End Number: </label><input type='number' name='end_number' id='end_number' value="10"> </div>
+            <div><label>Interval: </label><input type='number' name='interval_number' id='int_number' value="2"></div>
 
 
-            </div><!--multiplication-->
+            
+            <div id='res'>
+                <p>Result:</p>
+                <p>teste</p>
+                <p>teste</p>
+                <p>teste</p>
+                <p>teste</p>
+
+
+            </div>
+
+
+            <button id='btn_count' onclick="countNumber()">Count</button>
+           </div><!--counting-->
+
+
+
+        <div id='bg_multiplication'>
+
+
+        </div><!--multiplication-->
     </main>
-
+    <script src="script.js"></script>
 </body>
 </html>
