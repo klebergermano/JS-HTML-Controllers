@@ -18,25 +18,20 @@ function countNumber() {
         alert('Please digit a end number greater than zero');
 
     } else if (end <= start) {
-        alert('Please digit a end number greater than star number');
+
+        res.innerHTML = '';
+
+        for (var i = start; i >= end; i -= interval) {
+            res.innerHTML += '<p>' + i + '</p>';
+        }
 
     }else {
 
-        alert(start);
         res.innerHTML = '';
-        var c = 0;
-        for (var i = start; i <= end; i++) {
 
-
-            if (c == interval || i == start) {
+        for (var i = start; i <= end; i+=interval) {
                 res.innerHTML += '<p>' + i + '</p>';
-                c = 0;
-            } else {
-                c++;
-            }
-
-
-        }
+                }
     }
 
 
