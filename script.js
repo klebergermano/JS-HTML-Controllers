@@ -103,9 +103,9 @@ function validaNumber(num) {
 
     let finded = findNumber(num);
 
-    if (num > 100 || num == '') {
+    if ( num == '') {
 
-        alert('Please enter with a number greater than 0 and less than 100');
+        alert('Please enter with a number greater than 0');
         return false;
 
     } else if (finded) {
