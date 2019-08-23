@@ -8,42 +8,68 @@
     <title>Document</title>
 </head>
 <body>
-    <main id='main_grid'>
-        <div id='bg_count'>
+    <div class="pages">
+        <main id='main_grid'>
 
-            <div><label>Start Number: </label><input type='number' name='start_number' id='start_number' value="2"></div>
-            <div><label>End Number: </label><input type='number' name='end_number' id='end_number' value="10"> </div>
-            <div><label>Interval: </label><input type='number' name='interval_number' id='int_number' value="2"></div>
+            <div id='bg_analyzer'>
+                <h2>Number Analyzer</h2>
+
+                <div>
+                    <input type="number" name="number" id="input_number" value="0" />
+                    <input type="button" value="Add Number" id="btn_add_number" />
+                </div>
+                <div id="bg_select">
+                    <select name="select" id="select_numbers" size="10">
+                    </select>
+                    <input type="button" value="Analyze" id="btn_finish_analyze" />
+                    <input type="button" value="clear" id="btn_clear" />
+
+                </div>
+                <div id="result">
 
 
-            
-            <div id='res'>
-                <p>Result:</p>
-                <p>teste</p>
-                <p>teste</p>
-                <p>teste</p>
-                <p>teste</p>
+                </div><!--return-->
+
 
 
             </div>
 
 
-            <button id='btn_count' onclick="countNumber()">Count</button>
-           </div><!--counting-->
+            <div id='bg_count'>
+                <h2>Number Counter</h2>
+
+                <div><label>Start Number: </label><input type='number' name='start_number' id='start_number' value="0"></div>
+                <div><label>End Number: </label><input type='number' name='end_number' id='end_number' value="10"> </div>
+                <div><label>Step: </label><input type='number' name='interval_number' id='int_number' value="1"></div>
 
 
 
-        <div id='bg_multiplication'>
-        <h2>Multiplication Table</h2>
-            <div><label>Number</label><input type='number' name='multiply_number' id='multiply_number' value="9"> 
-            </div>
-            <button id="btn_multiply" onclick="multiply()">Multiply Number</button>
-                <div id="txt_table"></div> 
-            
-           
+                <div id='res'>
+                    <p>Result:</p>
 
-        </div><!--multiplication-->
-    </main>
+
+                </div>
+
+
+                <button id='btn_count' onclick="countNumber()">Count</button>
+            </div><!--counting-->
+
+
+
+            <div id='bg_multiplication'>
+                <h2>Multiplication Table</h2>
+                <div>
+                    <label>Number</label><input type='number' name='multiply_number' id='multiply_number' value="9">
+                </div>
+                <button id="btn_multiply" onclick="multiply()">Multiply Number</button>
+                <select size="12" id="txt_table">
+                </select>
+
+
+
+            </div><!--multiplication-->
+        </main>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>

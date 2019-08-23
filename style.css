@@ -1,12 +1,76 @@
 * { margin:0px; padding:0px; box-sizing:border-box;
+    font-family:Arial;
+}
+
+ h2 {
+    color: #fff;
+    padding: 10px;
+    font-size:18px;
+}
+
+.pages {
+    max-width:1170px; 
+    height:100vh;
+    background:#f0f0f0;
+    margin:0 auto;
+    padding:20px;
 }
 
 #main_grid {
-    
+   
+    margin:0 auto;
+  
     display: inline-grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 50px;
+}
+  
+
+    /*--- Analyzer Numbers --- */
+    #bg_analyzer {
+    box-sizing: border-box;
+    background: #5b77a1;
+    padding: 5px;
+    padding: 20px;
+    border-radius: 15px;
+    max-width: 350px;
 }
 
+        #bg_analyzer select {
+            width: 100%;
+        }
+
+        #bg_analyzer > div {
+            display: flex;
+            flex-wrap:wrap;
+        }
+
+
+        #bg_analyzer > div > input[type='button'] {
+           padding:10px;
+           width:40%;
+
+        }
+
+
+#btn_finish_analyze, #btn_clear  {
+margin-top:5px;
+}
+#bg_analyzer > div > input {
+    width: 60%;
+}
+
+         #bg_analyzer  input {
+                width: 60%;
+            }
+         #bg_analyzer  #result {
+                width:100%; min-height:30px;
+                background:#fff;
+                margin-top:5px;
+                padding:20px; line-height: 22px;
+            }
+
+/*--- Count Numbers --- */
 #bg_count {
     box-sizing: border-box;
     background: #5b77a1;
@@ -15,9 +79,14 @@
     border-radius: 15px;
     max-width:350px;
 }
+#bg_count button {
+padding:10px 15px;
+min-width:40%;
+margin-top:-5px;
+}
 
     #bg_count > div {
-        width:100%;
+        width: 100%;
         margin-bottom: 10px;
         overflow: hidden;
         display: flex;
@@ -39,10 +108,9 @@
     background: #fff;
     width: 100%;
     padding: 5px;
-height: auto;
+    height: auto;
     padding: 5px; /* this */
     flex-direction: row;
-
 }
 
 
@@ -60,11 +128,11 @@ height: auto;
     /*----Multiplication Table---*/
 
 #bg_multiplication {
-    display: flex;
-        flex-wrap: wrap;
-    margin-left: 20px;
+    
+   
     border-radius: 15px;
     max-width: 400px;
+    height:auto;
     background: #5b77a1;
     padding: 20px;
 }
@@ -86,9 +154,7 @@ height: auto;
         color: #222;
         padding: 5px;
     }
-    #bg_multiplication h2 {
-    color:#fff; padding:20px; 
-}
+
     #txt_table {
     flex-basis: 100%;
     border: 1px solid #ccc;
@@ -108,5 +174,18 @@ height: auto;
 
 #btn_multiply {
   
-    padding:5px; float:right;
+    padding:10px; float:right;
+    width:50%;
+    margin:5px 0px;
+
+}
+
+select option {
+height:auto;
+}
+    select option {
+border:1px solid #ccc;
+width:100%; 
+height:auto;
+padding:2px;
 }
