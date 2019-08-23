@@ -51,7 +51,8 @@ function analyzeNumber() {
         biggestNum = arrayNum[(optionsNum - 1)];
         averageNum = sumNum / optionsNum;
         result.innerHTML = '';
-        resultTxt = `The smallest number is ${smallestNum}<br/>`;
+        resultTxt = ` ${optionsNum} numbers counted:<br/><br/>`;
+        resultTxt += `The smallest number is ${smallestNum}<br/>`;
         resultTxt += `The biggest number is ${biggestNum} <br/>`;
         resultTxt += `The average number is ${averageNum} <br/>`;
         resultTxt += `The sume of the numbers is ${sumNum} <br/>`;
